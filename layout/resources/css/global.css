@@ -7,10 +7,40 @@ body {
 	margin: 0;
 }
 
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 80px 1fr 80px;
+}
+
 heavy-navbar {
 	/* General Navbar */
 	--heavy-navbar-background: #000000;
 	--heavy-navbar-color: #FFFFFF;
 	--heavy-navbar-hover-color: #DED016;
 
+	--heavy-navbar-a-font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	min-height: calc(100vh - 160px);
+	text-align: center;
+}
+
+.container p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.hero {
+
+}
+
+.hero img {
+	max-width: 100%;
+	height: auto;
 }
