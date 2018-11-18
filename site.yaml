@@ -1,0 +1,10 @@
+Title: 'Heavy Light Studios - Dream, Design, Develop, Defy'
+Description: 'Heavy Light Studios are an agile and contemporary design studio. We are here to make your dreams a reality. We accomplish this through thought provoking and modern design while developing business solutions that are individually customised for the needs of our clients and their customers.'
+Author: 'Heavy Light Studios'
+Copyright: '© 2018 Heavy Light Studios'
+Url: 'https://heavylightstudios.co'
+PrettyUrls: true
+UserSiteSettings: {}
+LayoutFolder: 'layout'
+ContentFolder: 'content'
+BuildFolder: 'public'

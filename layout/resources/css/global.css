@@ -6,3 +6,11 @@ html {
 body {
 	margin: 0;
 }
+
+heavy-navbar {
+	/* General Navbar */
+	--heavy-navbar-background: #000000;
+	--heavy-navbar-color: #FFFFFF;
+	--heavy-navbar-hover-color: #DED016;
+
+}
