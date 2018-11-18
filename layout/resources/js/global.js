@@ -20,14 +20,14 @@ function jumpTo(id) {
     }
 }
 window.onload = function (ev) {
-    var url = location.hash.slice(1) || '/';
+    var url = location.pathname;
     if (url === '/') {
         jumpTo('home');
     }
-    else if (url === 'about') {
+    else if (url === '/about') {
         jumpTo('about');
     }
-    else if (url === 'contact') {
+    else if (url === '/contact') {
         jumpTo('contact');
     }
 };
