@@ -10,27 +10,27 @@ body {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 80px 1fr 80px;
+	grid-template-rows: 80px auto auto auto 100px;
 }
 
 heavy-navbar {
 	/* General Navbar */
 	--heavy-navbar-background: #000000;
 	--heavy-navbar-color: #FFFFFF;
-	--heavy-navbar-hover-color: #DED016;
+	--heavy-navbar-hover-color: #FED016;
 
 	--heavy-navbar-a-font-family: 'Roboto', sans-serif;
 }
 
-.container {
+#home {
 	grid-row-start: 2;
 	grid-row-end: 3;
 
-	min-height: calc(100vh - 160px);
+	min-height: calc(100vh - 240px);
 	text-align: center;
 }
 
-.container p {
+#home p {
 	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: 300;
@@ -41,9 +41,26 @@ heavy-navbar {
 	height: auto;
 }
 
-footer {
+#about {
 	grid-row-start: 3;
 	grid-row-end: 4;
+
+	min-height: 80vh;
+	text-align: center;
+	background-color: #FED016;
+}
+
+#contact {
+	grid-row-start: 4;
+	grid-row-end: 5;
+
+	min-height: calc(100vh - 160px);
+	text-align: center;
+}
+
+footer {
+	grid-row-start: 5;
+	grid-row-end: 6;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -62,4 +79,8 @@ footer > p {
 	margin-top: 0;
 	padding-top: 5px;
 	text-align: center;
+}
+
+.black-text {
+	color: #000000;
 }

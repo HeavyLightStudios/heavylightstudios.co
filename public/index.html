@@ -19,15 +19,28 @@
 </head>
 <body>
 <main>
-<heavy-navbar item-count="2" position="scroll">
-	<a href="/" slot="item-1">Home</a>
-	<a href="about" slot="item-2">About</a>
-</heavy-navbar>	<div class="container">
+<heavy-navbar item-count="3" position="fixed">
+	<a onclick="jumpTo('home')" slot="item-1">Home</a>
+	<a onclick="jumpTo('about')" onclick="" slot="item-2">About</a>
+	<a onclick="jumpTo('contact')" onclick="" slot="item-3">Contact</a>
+</heavy-navbar>	<div id="home">
 		<div class="hero">
 			<img src="/resources/images/HLS Logo & Moto Final White@2x.png" alt="Heavy Light Studios Logo">
 		</div>
 		<p>An agile and contemporary design studio <span id="moto-expanded">turning your dreams into reality. </span></p>
 
+	</div>
+	<div id="about">
+		<div class="hero black-text">
+			<h1>About</h1>
+			<p>Heavy Light Studios are an agile and  contemporary design studio here to turn your dreams into reality.</p>
+			<p>We accomplish this through thought provoking and modern design while developing business solutions that are individually customised for the needs of our clients and their customers.  </p>
+		</div>
+	</div>
+	<div id="contact">
+		<div class="hero">
+			<h2>Contact</h2>
+		</div>
 	</div>
 <footer>
 	<a href="https://github.com/HeavyLightStudios"><img src="/resources/images/GitHub-Mark-Light-32px.png" alt="github_mark"></a>
@@ -44,7 +57,9 @@
 		typeSpeed: 40,
 		backSpeed: 20,
 		backDelay: 3000,
+		showCursor: false,
 		startDelay: 4000
 	});
 </script>
+<script src="resources/js/global.js"></script>
 </html>
