@@ -15,7 +15,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 
 <!-- Site CSS -->
-<link rel="stylesheet" href="/resources/css/global.css" /></head>
+<link rel="stylesheet" href="/resources/css/global.css" />	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</head>
 <body>
 <main>
 <heavy-navbar item-count="2" position="scroll">
@@ -25,9 +26,25 @@
 		<div class="hero">
 			<img src="/resources/images/HLS Logo & Moto Final White@2x.png" alt="Heavy Light Studios Logo">
 		</div>
-		<p>An agile and contemporary design studio turning your dreams into reality.</p>
+		<p>An agile and contemporary design studio <span id="moto-expanded">turning your dreams into reality. </span></p>
 
 	</div>
-</main>
+<footer>
+	<a href="https://github.com/HeavyLightStudios"><img src="/resources/images/GitHub-Mark-Light-32px.png" alt="github_mark"></a>
+	<p>&#169; 2018 Heavy Light Studios</p>
+</footer></main>
 </body>
+<script>
+	var typed = new Typed('#moto-expanded', {
+		strings: [
+			"turning your design into reality. ",
+			"turning your design into reality. ",
+			"developing your ideas into reality. ",
+			"defying your expectations. "],
+		typeSpeed: 40,
+		backSpeed: 20,
+		backDelay: 3000,
+		startDelay: 4000
+	});
+</script>
 </html>

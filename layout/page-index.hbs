@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	{{> header}}
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 <body>
 <main>
@@ -12,6 +13,20 @@
 		</div>
 		{{{html}}}
 	</div>
+	{{> footer }}
 </main>
 </body>
+<script>
+	var typed = new Typed('#moto-expanded', {
+		strings: [
+			"turning your design into reality. ",
+			"turning your design into reality. ",
+			"developing your ideas into reality. ",
+			"defying your expectations. "],
+		typeSpeed: 40,
+		backSpeed: 20,
+		backDelay: 3000,
+		startDelay: 4000
+	});
+</script>
 </html>
