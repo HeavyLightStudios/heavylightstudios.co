@@ -5,25 +5,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 </head>
 <body>
+{{> navigation }}
 <main>
-	{{> navigation }}
-	<div id="home">
+	<div id="home" class="container">
 		<div class="hero">
 			<img src="/resources/images/HLS Logo & Moto Final White@2x.png" alt="Heavy Light Studios Logo">
 		</div>
 		{{{html}}}
-	</div>
-	<div id="about">
-		<div class="hero black-text">
-			<h1>About</h1>
-			<p>Heavy Light Studios are an agile and  contemporary design studio here to turn your dreams into reality.</p>
-			<p>We accomplish this through thought provoking and modern design while developing business solutions that are individually customised for the needs of our clients and their customers.  </p>
-		</div>
-	</div>
-	<div id="contact">
-		<div class="hero">
-			<h2>Contact</h2>
-		</div>
 	</div>
 	{{> footer }}
 </main>
@@ -42,5 +30,4 @@
 		startDelay: 4000
 	});
 </script>
-<script src="resources/js/global.js"></script>
 </html>

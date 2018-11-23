@@ -1,4 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
 https://zealous-einstein-986b58.netlify.com/* https://heavylightstudios.co/:splat 301!
-
-/*    /index.html   200

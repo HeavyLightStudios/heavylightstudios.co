@@ -10,7 +10,7 @@ body {
 main {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 80px auto auto auto 100px;
+	grid-template-rows: 80px calc(100vh - 180px) 100px;
 }
 
 heavy-navbar {
@@ -22,11 +22,11 @@ heavy-navbar {
 	--heavy-navbar-a-font-family: 'Roboto', sans-serif;
 }
 
-#home {
+.container {
 	grid-row-start: 2;
 	grid-row-end: 3;
 
-	min-height: calc(100vh - 240px);
+	min-height: calc(100vh - 180px);
 	text-align: center;
 }
 
@@ -41,30 +41,33 @@ heavy-navbar {
 	height: auto;
 }
 
-#about {
-	grid-row-start: 3;
-	grid-row-end: 4;
-
-	min-height: 80vh;
-	text-align: center;
-	background-color: #FED016;
+#about p {
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
-#contact {
-	grid-row-start: 4;
-	grid-row-end: 5;
+#about > .content {
+	display: grid;
+	grid-template-columns: auto 380px auto;
+	grid-template-rows: auto 1fr 1fr;
+}
 
-	min-height: calc(100vh - 160px);
-	text-align: center;
+#about .hero-text {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	text-align: start;
 }
 
 footer {
-	grid-row-start: 5;
-	grid-row-end: 6;
+	grid-row-start: 3;
+	grid-row-end: 4;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 footer > a {
