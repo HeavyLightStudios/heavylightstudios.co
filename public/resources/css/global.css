@@ -54,11 +54,42 @@ heavy-navbar {
 }
 
 #about .hero-text {
-	grid-row-start: 1;
-	grid-row-end: 2;
-	grid-column-start: 2;
-	grid-column-end: 3;
+	width: 380px;
+	margin-left: auto;
+	margin-right: auto;
 	text-align: start;
+}
+
+#about-team-header {
+	color: #FED016;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 0.5em;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 3em;
+}
+
+#about-team-header span {
+	font-size: 3em;
+}
+
+@media screen and (max-width: 480px) {
+	#about > .content {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	#about-team-header {
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+
 }
 
 footer {
